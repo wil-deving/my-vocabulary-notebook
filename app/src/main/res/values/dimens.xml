@@ -22,4 +22,9 @@
     <dimen name="text_view_item_meaning">16sp</dimen>
 
     <dimen name="text_button_general">16sp</dimen>
+
+    <dimen name="types_meaning_left_right_margin">12dp</dimen>
+    <dimen name="types_meaning_top_bottom_padding">12dp</dimen>
+
+    <dimen name="left_right_larger_margin">55dp</dimen>
 </resources>

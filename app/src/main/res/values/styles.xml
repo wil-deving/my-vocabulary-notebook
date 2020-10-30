@@ -7,4 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="GeneralHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_view_general</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
 </resources>

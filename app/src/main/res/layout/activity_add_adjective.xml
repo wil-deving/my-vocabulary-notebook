@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lnMainParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvheaderVerb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Nuevos Datos"
+            android:textSize="@dimen/text_view_title"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/padding_top_title"
+            android:paddingBottom="@dimen/padding_bottom_title"
+            android:paddingLeft="@dimen/padding_left_title"
+            android:layout_alignParentStart="true"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/first_top_Margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el Término" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:maxLines="3"
+                android:minLines="2"
+                android:hint="Ingrese el Significado" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:maxLines="3"
+                android:minLines="2"
+                android:hint="Repita el Significado" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilGerundy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_larger_margin"
+            android:layout_marginLeft="@dimen/left_right_larger_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comparativo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_larger_margin"
+            android:layout_marginLeft="@dimen/left_right_larger_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Superlativo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ejemplo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            app:hintTextAppearance="@style/GeneralHintText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Traducción del ejemplo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAnotherMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_add_circle_white24"
+            android:drawableTint="@color/colorWhite"
+            android:backgroundTint="@color/colorSuccessSecundary"
+            android:text="Adicionar otro Significado"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:onClick="addAnotherMeaning"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:layout_marginBottom="@dimen/bottom_general_margin"
+            android:weightSum="12">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_button_general"
+                android:layout_marginLeft="@dimen/left_right_general_margin"
+                android:layout_marginRight="@dimen/left_right_general_margin"
+                android:background="@drawable/botonconfirm"
+                android:onClick="saveAndFinish"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_button_general"
+                android:layout_marginLeft="@dimen/left_right_general_margin"
+                android:layout_marginRight="@dimen/left_right_general_margin"
+                android:background="@drawable/botoncancel"
+                android:onClick="cancel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

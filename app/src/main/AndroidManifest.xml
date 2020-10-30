@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.SelectTypeActivity"></activity>
+        <activity android:name=".ui.AddPhrasalVerbActivity"></activity>
+        <activity android:name=".ui.AddCommonActivity" />
+        <activity android:name=".ui.AddNounActivity" />
+        <activity android:name=".ui.AddAdjectiveActivity" />
+        <activity android:name=".ui.AddVerbActivity" />
+        <activity android:name=".ui.SelectTypeActivity" />
         <activity android:name=".ui.MainTrainingActivity" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>

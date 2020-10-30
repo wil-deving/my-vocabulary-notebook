@@ -1,26 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorWhite"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
+        android:id="@+id/tvheaderTypes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select type" />
+        android:text="Seleccione el Tipo"
+        android:textSize="@dimen/text_view_title"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:paddingTop="@dimen/padding_top_title"
+        android:paddingBottom="@dimen/padding_bottom_title"
+        android:paddingLeft="@dimen/padding_left_title"
+        android:layout_alignParentStart="true"
+        />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="12"
-        android:orientation="horizontal"
-        android:layout_marginLeft="@dimen/left_right_general_margin"
-        android:layout_marginRight="@dimen/left_right_general_margin"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:padding="20dp">
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_centerVertical="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:padding="@dimen/padding_general_components">
+
+            <Button
+                android:id="@+id/btnVerb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_format_paint_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Verbo"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginRight="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+            <Button
+                android:id="@+id/btnAdjective"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_attach_money_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Adjetivo"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginLeft="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:padding="@dimen/padding_general_components">
+
+            <Button
+                android:id="@+id/btnNoun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_directions_bus_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Noun"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginRight="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+            <Button
+                android:id="@+id/btnAdverb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_thumbs_up_down_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Adverbio"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginLeft="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:padding="@dimen/padding_general_components">
+
+            <Button
+                android:id="@+id/btnPreposition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_not_listed_location_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Preposición"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginRight="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+            <Button
+                android:id="@+id/btnConjunction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_compare_arrows_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Conjunción"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginLeft="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/left_right_general_margin"
+            android:layout_marginRight="@dimen/left_right_general_margin"
+            android:padding="@dimen/padding_general_components">
+
+            <Button
+                android:id="@+id/btnPhrasalVerb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_directions_run_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Phrasal Verb"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginRight="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+            <Button
+                android:id="@+id/btnExpression"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:drawableTop="@drawable/ic_baseline_people_24"
+                android:drawableTint="@color/colorBlack"
+                android:backgroundTint="@color/colorWhite"
+                android:text="Expresión"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_view_general"
+                android:layout_marginLeft="@dimen/types_meaning_left_right_margin"
+                android:paddingRight="@dimen/padding_general_components"
+                android:paddingLeft="@dimen/padding_general_components"
+                android:paddingTop="@dimen/types_meaning_top_bottom_padding"
+                android:paddingBottom="@dimen/types_meaning_top_bottom_padding"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

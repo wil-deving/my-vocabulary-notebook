@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true">
+        <shape>
+            <corners
+                android:radius="5dp"/>
+            <solid
+                android:color="@color/colorSuccessPressed"/>
+            <stroke
+                android:color="@color/colorBlack"
+                android:width="0dp"/>
+        </shape>
+    </item>
+    <!--En este item que es el normal (cuando no se lo esta oprimiendo)solo ponemos
+    atributos que deseemos-->
+    <item>
+        <shape>
+            <corners
+                android:radius="5dp"/>
+            <solid
+                android:color="@color/colorSuccess"/>
+            <stroke
+                android:color="@color/colorBlack"
+                android:width="0dp"/>
+        </shape>
+    </item>
+</selector>
