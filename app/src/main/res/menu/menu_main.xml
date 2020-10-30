@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_to_learn"
+        android:title="Por Aprender"
+        android:icon="@drawable/ic_baseline_priority_high_24"/>
+
+    <item
+        android:id="@+id/menu_learned"
+        android:title="Aprendidas"
+        android:icon="@drawable/ic_baseline_check_24"/>
+
+</menu>

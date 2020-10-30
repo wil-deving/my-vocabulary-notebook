@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/dictionaries"
+                android:layout_marginTop="@dimen/first_top_Margin"
+                android:layout_marginLeft="@dimen/left_right_general_margin"
+                android:layout_marginRight="@dimen/left_right_general_margin"
+                android:layout_marginBottom="@dimen/bottom_general_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="16"
+                android:layout_marginLeft="@dimen/left_right_general_margin"
+                android:layout_marginRight="@dimen/left_right_general_margin"
+                android:layout_marginBottom="@dimen/bottom_general_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/text_view_general"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:text="Buscar:"/>
+
+                <SearchView
+                    android:id="@+id/svFindItemVoc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="12"
+                    android:layout_marginLeft="@dimen/left_right_general_margin"
+                    android:layout_marginRight="@dimen/left_right_general_margin"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAreThereData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_right_general_margin"
+                android:layout_marginRight="@dimen/left_right_general_margin"
+                android:text="No se encontaron Registros"
+                android:textSize="@dimen/text_view_general"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/bottom_general_margin"
+                />
+
+            <ListView
+                android:id="@+id/lvVocabularyList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

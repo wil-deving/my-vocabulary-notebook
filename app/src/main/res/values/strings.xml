@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Vocabulary Notebook</string>
+    <string-array name="dictionaries">
+        <item>General</item>
+        <item>Inglés</item>
+        <item>Informática</item>
+    </string-array>
+</resources>

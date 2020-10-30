@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_top_Margin">25dp</dimen>
+    <dimen name="left_right_general_margin">20dp</dimen>
+    <dimen name="bottom_general_margin">10dp</dimen>
+
+    <dimen name="bottom_textview_for_edittext">2dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="padding_general_components">4dp</dimen>
+
+    <dimen name="padding_top_title">13dp</dimen>
+    <dimen name="padding_bottom_title">13dp</dimen>
+    <dimen name="padding_left_title">15dp</dimen>
+
+    <dimen name="padding_left_right_item_list_training_meaning">35dp</dimen>
+    <dimen name="padding_top_bottom_item_list_training_meaning">20dp</dimen>
+
+    <dimen name="text_view_title">18sp</dimen>
+    <dimen name="text_view_general">14sp</dimen>
+    <dimen name="text_view_item_meaning">16sp</dimen>
+
+    <dimen name="text_button_general">16sp</dimen>
+</resources>
