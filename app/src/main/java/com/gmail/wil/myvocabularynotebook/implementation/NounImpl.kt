@@ -1,0 +1,18 @@
+package com.gmail.wil.myvocabularynotebook.implementation
+
+import com.gmail.wil.myvocabularynotebook.`interface`.IMeaning
+
+class NounImpl : MeaningImpl() {
+
+    override fun saveMeaning() {
+        TODO("Not yet implemented")
+    }
+
+    override fun updateMeaning() {
+        TODO("Not yet implemented")
+    }
+
+    override fun deleteMeaning() {
+        TODO("Not yet implemented")
+    }
+}
