@@ -4,15 +4,5 @@ import com.gmail.wil.myvocabularynotebook.`interface`.IMeaning
 
 class VerbImpl : MeaningImpl() {
 
-    override fun saveMeaning() {
-        TODO("Not yet implemented")
-    }
 
-    override fun updateMeaning() {
-        TODO("Not yet implemented")
-    }
-
-    override fun deleteMeaning() {
-        TODO("Not yet implemented")
-    }
 }

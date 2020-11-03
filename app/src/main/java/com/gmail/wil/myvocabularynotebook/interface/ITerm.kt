@@ -2,7 +2,7 @@ package com.gmail.wil.myvocabularynotebook.`interface`
 
 interface ITerm {
 
-    fun save()
-    fun update()
-    fun delete()
+    fun saveTerm(term: String) : String
+    fun updateTerm()
+    fun deleteTerm()
 }

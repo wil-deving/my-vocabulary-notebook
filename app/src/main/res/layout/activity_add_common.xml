@@ -35,6 +35,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTermCommon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ingrese el Término" />
@@ -51,6 +52,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMainMeaningCommon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="3"
@@ -70,6 +72,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSecondMeaningCommon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="3"
@@ -89,6 +92,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEngExampleCommon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ejemplo" />
@@ -105,6 +109,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEspExampleCommon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Traducción del ejemplo" />
@@ -112,7 +117,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnAnotherMeaning"
+            android:id="@+id/btnAnotherMeaningCommon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="35dp"
