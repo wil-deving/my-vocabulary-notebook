@@ -18,20 +18,16 @@ class TermImpl(context: Context) : ITerm {
     }
 
 
-    override fun saveTerm(term: String) : String {
-        val IdTerm = randomAlphanumericString()
-
+    override fun saveTerm(id: String, term: String) : Long {
+        db!!.open()
         val contentValues = ContentValues()
-        contentValues.put(Constants.TERM_ID_TERM_VOCABULARY, IdTerm)
+        contentValues.put(Constants.TERM_ID_TERM_VOCABULARY, id)
         contentValues.put(Constants.TERM_TERM_DESC, term)
         contentValues.put(Constants.TERM_LEARNED, 0)
-
-        val r = db!!.saveData(Constants.TABLE_TERM, contentValues)
-
-        // r que es la respuesta sera correcto cuando sea > 0 sino es error SQLite
-
+        val dbResp = db!!.saveData(Constants.TABLE_TERM, contentValues)
+        // dbResp que es la respuesta sera correcto cuando sea > 0 sino es error SQLite
         db!!.close()
-        return r.toString()
+        return dbResp
     }
 
     override fun updateTerm() {

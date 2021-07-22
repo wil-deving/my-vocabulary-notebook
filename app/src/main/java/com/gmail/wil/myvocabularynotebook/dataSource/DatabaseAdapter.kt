@@ -27,8 +27,7 @@ class DatabaseAdapter(context: Context) : IConexion {
     }
 
     override fun saveData(TABLE: String, CONTENTVALUES: ContentValues) : Long {
-        val contentValues = ContentValues()
-        return db!!.insert("TABLE", null, CONTENTVALUES)
+        return db!!.insert(TABLE, null, CONTENTVALUES)
     }
 
     override fun updateData() {
@@ -59,15 +58,16 @@ class DatabaseAdapter(context: Context) : IConexion {
                         "${Constants.MEANING_ESP_EXAMPLE} TEXT ) "
             )
             db.execSQL(
+                "CREATE TABLE ${Constants.TABLE_FORM} (" +
+                        "${Constants.FORM_ID_MEANING} TEXT NOT NULL, " +
+                        "${Constants.FORM_ID_FORM} TEXT NOT NULL ) "
+            )
+            /*
+            db.execSQL(
                 "CREATE TABLE ${Constants.TABLE_PRACTICE} (" +
                         "${Constants.PRACTICE_ID_PRACTICE} TEXT NOT NULL, " +
                         "${Constants.PRACTICE_ID_MEANING} TEXT NOT NULL, " +
                         "${Constants.PRACTICE_TO_COUNT} INTEGER ) "
-            )
-            db.execSQL(
-                "CREATE TABLE ${Constants.TABLE_FORM} (" +
-                        "${Constants.FORM_ID_FORM} TEXT NOT NULL, " +
-                        "${Constants.FORM_ID_MEANING} TEXT NOT NULL ) "
             )
             db.execSQL(
                 "CREATE TABLE ${Constants.TABLE_PHRASAL_VERB} (" +
@@ -93,6 +93,7 @@ class DatabaseAdapter(context: Context) : IConexion {
                         "${Constants.NOUN_ID_NOUN} TEXT PRIMARY KEY, " +
                         "${Constants.NOUN_PLURAL} TEXT ) "
             )
+             */
             db.execSQL(
                 "CREATE TABLE ${Constants.TABLE_COMMON} (" +
                         "${Constants.COMMON_ID_TYPE} TEXT PRIMARY KEY, " +
@@ -102,14 +103,14 @@ class DatabaseAdapter(context: Context) : IConexion {
 
         override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_TERM}")
-            db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_MEANING}")
+            /*db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_MEANING}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_PRACTICE}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_FORM}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_PHRASAL_VERB}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_VERB}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_ADJECTIVE}")
             db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_NOUN}")
-            db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_COMMON}")
+            db.execSQL("DROP TABLE IF EXISTS ${Constants.TABLE_COMMON}")*/
             onCreate(db)
         }
     }

@@ -14,37 +14,41 @@ class SelectTypeActivity : AppCompatActivity() {
         btnVerb.setOnClickListener {
             val intent = Intent(this, AddVerbActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btnAdjective.setOnClickListener {
             val intent = Intent(this, AddAdjectiveActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btnNoun.setOnClickListener {
             val intent = Intent(this, AddNounActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btnAdverb.setOnClickListener {
-            startNewCommon("adv")
+            startNewCommon("adverb")
+        }
+
+        btnPreposition.setOnClickListener {
+            startNewCommon("preposition")
         }
 
         btnConjunction.setOnClickListener {
-            startNewCommon("conj")
-        }
-
-        btnExpression.setOnClickListener {
-            startNewCommon("exp")
+            startNewCommon("conjunction")
         }
 
         btnPhrasalVerb.setOnClickListener {
             val intent = Intent(this, AddPhrasalVerbActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
-        btnPreposition.setOnClickListener {
-            startNewCommon("prep")
+        btnExpression.setOnClickListener {
+            startNewCommon("expression")
         }
 
     }
@@ -52,6 +56,8 @@ class SelectTypeActivity : AppCompatActivity() {
     fun startNewCommon(type: String) {
         val intent = Intent(this, AddCommonActivity::class.java)
         // send a extra with type
+        intent.putExtra("termType", type)
         startActivity(intent)
+        finish()
     }
 }
