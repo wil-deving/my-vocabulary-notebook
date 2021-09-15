@@ -6,7 +6,6 @@ import com.gmail.wil.myvocabularynotebook.`interface`.IConexion
 import com.gmail.wil.myvocabularynotebook.`interface`.ITerm
 import com.gmail.wil.myvocabularynotebook.dataSource.Constants
 import com.gmail.wil.myvocabularynotebook.dataSource.DatabaseAdapter
-import com.gmail.wil.myvocabularynotebook.managers.randomAlphanumericString
 
 class TermImpl(context: Context) : ITerm {
 

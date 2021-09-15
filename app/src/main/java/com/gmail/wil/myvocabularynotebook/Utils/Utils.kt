@@ -1,4 +1,4 @@
-package com.gmail.wil.myvocabularynotebook.managers
+package com.gmail.wil.myvocabularynotebook.Utils
 
 import com.gmail.wil.myvocabularynotebook.model.Meaning
 
